@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:week1_tasks/week2/week2_home_page.dart';
+import 'package:week1_tasks/week3/week3_home_page.dart';
 import 'week1/week1_home_page.dart';
 
 void main() {
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Weekly Tasks',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -85,6 +87,25 @@ class _MyHomePageState extends State<MyHomePage> {
                   backgroundColor: Colors.cyan[50],
                 ),
                 child: Text('Week2-Tasks: (Sign In Pages Replication)'),
+              ),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(top: 15.0),
+            child: Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (builder) => Week3HomePage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  side: BorderSide(width: 2),
+                  backgroundColor: Colors.cyan[50],
+                ),
+                child: Text('Week3-Tasks: (Non Functional WA Clone)'),
               ),
             ),
           ),
