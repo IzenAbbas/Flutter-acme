@@ -27,7 +27,7 @@ class Task4 extends StatelessWidget {
                   textColor: Colors.black,
                 ),
                 Expanded(
-                  flex: 3,
+                  flex: 9,
                   child: Container(
                     color: Colors.black,
                     child: Column(
