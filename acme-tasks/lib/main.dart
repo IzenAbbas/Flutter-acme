@@ -105,7 +105,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   side: BorderSide(width: 2),
                   backgroundColor: Colors.cyan[50],
                 ),
-                child: Text('Week3-Tasks: (Non Functional WA Clone)'),
+                child: Text(
+                  'Week3-Tasks: (1-Non Functional WA Clone, 2-To Do List)',
+                ),
               ),
             ),
           ),

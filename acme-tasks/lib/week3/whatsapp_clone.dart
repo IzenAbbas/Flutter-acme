@@ -198,7 +198,7 @@ class _WhatsappCloneState extends State<WhatsappClone> {
                       ? Image.asset('assets/images/WAC1.png')
                       : Image.asset('assets/images/WAC2.png'),
                   title: Text(
-                    'User ${(index + 1)}',
+                    'Contact ${(index + 1)}',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   subtitle: Text('Updated their status'),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:week1_tasks/week3/to_do_list.dart';
 import 'package:week1_tasks/week3/whatsapp_clone.dart';
 
 class Week3HomePage extends StatefulWidget {
@@ -43,6 +44,22 @@ class _Week3HomePageState extends State<Week3HomePage> {
                   side: BorderSide(width: 2),
                 ),
                 child: Text('Whatsapp Clone'),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 15.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (builder) => ToDoList()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.cyan[50],
+                  side: BorderSide(width: 2),
+                ),
+                child: Text('To D List'),
               ),
             ),
           ],
